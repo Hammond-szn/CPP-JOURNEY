@@ -1,46 +1,74 @@
 <!doctype html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My HTML Diary</title>
-    
-        <style> 
+    <style>
         body {
-            background-color: rgb(204, 205, 204);
-            img {
-                width: 100px;
-                height: 100px;
-            }           
-          
-            p { color: rgb(0, 0, 0);
-                font-size: 20px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
+            min-height: 100vh;
+            margin: 0;
+            padding: 24px;
+            box-sizing: border-box;
+            background: url("background.jpg") center / cover fixed no-repeat;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
         }
-                
-        </style>   
-          <img src="C:\Users\DELL\Desktop\c++ journey\University_of_Ghana.png" alt="University of Ghana emblem, presented as a university identity mark on a plain background.">>
-                }
 
-      </body>
-        <p align="center" style="color: rgb(0, 0, 0); font-size: 24px; font-family: Arial, Helvetica, sans-serif;">
-                WELCOME
+        main {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 24px;
+            border-radius: 12px;
+            background: rgba(238, 227, 209, 0.84);
+            opacity: 0.9;
+        }
 
-    </p> 
-    <H4 align="center" style="color: rgb(0, 0, 0); font-size: 24px; font-family: Arial, Helvetica, sans-serif;">  USER!!!</H4>
-   
-    <form align="center">
-        USER ID : <input type ="text" name="user id"> <br>
-        password :<input type ="text" name="password"><br>
-        <button type="submit"> Login </button>    
-    </form>
-    <p>SELECT YOUR LEVEL</p>
-    <FORM >
-        <input type="radio"id="level100" name="level" value="100"><label for="level100">100</label><br>
-        <input type="radio" id="level200" name="level" value="200"><label for="level200">200</label><br>
-        <input type="radio" id="level300" name="level" value="300"><label for="level300">300</label><br>
-          <input type="radio" id="level400" name="level" value="400"><label for="level400">400</label><br>
-   
-        <input type="submit">
-    </FORM>
+        .center {
+            text-align: center;
+        }
 
-        
+        .emblem {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="center">
+            <img class="emblem" src="University_of_Ghana.png" alt="University of Ghana emblem">
+            <p style="font-size: 24px;">WELCOME</p>
+            <h1>USER!!!</h1>
+
+            <form>
+                <label for="user-id">USER ID:</label>
+                <input id="user-id" type="text" name="user id">
+                <br>
+                <label for="password">Password:</label>
+                <input id="password" type="text" name="password">
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <p>SELECT YOUR LEVEL</p>
+        <form>
+            <input type="radio" id="level100" name="level" value="100">
+            <label for="level100">100</label><br>
+            <input type="radio" id="level200" name="level" value="200">
+            <label for="level200">200</label><br>
+            <input type="radio" id="level300" name="level" value="300">
+            <label for="level300">300</label><br>
+            <input type="radio" id="level400" name="level" value="400">
+            <label for="level400">400</label><br>
+            <input type="submit">
+        </form>
+    </main>
+</body>
 </html>

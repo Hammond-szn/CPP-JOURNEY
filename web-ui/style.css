@@ -1,12 +1,12 @@
 :root{
   --bg:#0f1724;
-  --card:#0b1220;
+  --card:rgba(11,18,32,0.82);
   --accent:#6dd3ff;
   --muted:#9aa7b2;
   --glass: rgba(255,255,255,0.03);
 }
 *{box-sizing:border-box}
-body{font-family:Segoe UI, Roboto, Arial, sans-serif;background:linear-gradient(180deg,#071024 0%, #0b1724 100%);color:#e6eef6;margin:0;padding:32px;min-height:100vh}
+body{font-family:Segoe UI, Roboto, Arial, sans-serif;background:linear-gradient(180deg,rgba(7,16,36,0.45) 0%,rgba(11,23,36,0.62) 100%),url("../background.jpg") center / cover fixed no-repeat;color:#e6eef6;margin:0;padding:32px;min-height:100vh}
 .container{max-width:720px;margin:0 auto;background:var(--card);padding:28px;border-radius:12px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
 h1{margin:0 0 8px;font-size:26px;color:var(--accent)}
 p{color:var(--muted);line-height:1.45}
