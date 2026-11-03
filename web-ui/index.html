@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CGPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Check Your CGPA!</h1>
+
+    <form id="cgpa-form" novalidate>
+      <p>Enter your CGPA for each level. Valid numbers are 0.00 to 5.00 (or your scale).</p>
+
+      <label class="field">
+        <span>Level 100</span>
+        <input type="number" step="0.01" min="0" max="10" id="cgpa1" placeholder="e.g. 3.45" required>
+      </label>
+
+      <label class="field">
+        <span>Level 200</span>
+        <input type="number" step="0.01" min="0" max="10" id="cgpa2" placeholder="e.g. 3.60" required>
+      </label>
+
+      <label class="field">
+        <span>Level 300</span>
+        <input type="number" step="0.01" min="0" max="10" id="cgpa3" placeholder="e.g. 3.75" required>
+      </label>
+
+      <label class="field">
+        <span>Level 400</span>
+        <input type="number" step="0.01" min="0" max="10" id="cgpa4" placeholder="e.g. 3.80" required>
+      </label>
+
+      <div class="actions">
+        <button type="submit" id="calculate">Calculate CGPA</button>
+        <button type="button" id="reset">Reset</button>
+      </div>
+    </form>
+
+    <section id="result" aria-live="polite" class="result hidden">
+      <h2>Result</h2>
+      <p id="result-text"></p>
+    </section>
+
+    <section class="notes">
+      <h3>About</h3>
+      <P> Inspired by the need for a simple CGPA calculator, this web application allows users to input their cumulative grade points for each academic level and computes their overall CGPA.</P>
+    </section>
+    <section class="readme">
+      <h3>BUILT BY HAMMOND-szn</h3>
+   <p><a href="https://github.com/Hammond-szn">View on GitHub</a></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
